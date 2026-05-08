@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestión de Alumnos</title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+   
+    <header>
+        <h1>🎓 Registro de Alumnos</h1>
+    </header>
+   
+    <main class="container">
+        
+        <section class="card">
+            <h2>Nuevo Alumno</h2>
+            
+            <form id="alumnoForm">
+                <input type="text" id="nombre" placeholder="Nombre completo" required>
+                <input type="text" id="codigo" placeholder="Código (Ej: U2021...)" required>
+                <input type="email" id="correo" placeholder="Correo institucional" required>
+                <input type="password" id="passAdmin" placeholder="Clave de Seguridad" required>
+                <button type="submit">Registrar Alumno</button>
+            </form>
+        </section>
+
+        <section class="card">
+            <h2>Alumnos Registrados</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Código</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody id="listaAlumnos">
+                        </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
